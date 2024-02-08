@@ -22,10 +22,10 @@ public class Main {
     static void startUserInterface() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please give the first value a: ");
+        System.out.print("Give value for a: ");
         int a = Integer.parseInt( scanner.nextLine() );
 
-        System.out.print("Please give the first value b: ");
+        System.out.print("Give value for b: ");
         int b = Integer.parseInt( scanner.nextLine() );
 
         // Show all the calculations
