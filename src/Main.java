@@ -12,6 +12,7 @@ public class Main {
 
         // Add all the required calculations to the array
         calculations.add(new Summation());
+        calculations.add(new Multiplication());
 
         // Start the user interface of the application
         startUserInterface();
