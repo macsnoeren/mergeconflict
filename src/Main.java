@@ -12,6 +12,7 @@ public class Main {
 
         // Add all the required calculations to the array
         calculations.add(new Summation());
+        calculations.add(new Power());
 
         // Start the user interface of the application
         startUserInterface();
@@ -24,7 +25,7 @@ public class Main {
         System.out.print("Please give the first value a: ");
         int a = Integer.parseInt( scanner.nextLine() );
 
-        System.out.print("Please give the first value b: ");
+        System.out.print("Please give the second value b: ");
         int b = Integer.parseInt( scanner.nextLine() );
 
         // Show all the calculations
