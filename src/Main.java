@@ -13,6 +13,7 @@ public class Main {
         // Add all the required calculations to the array
         calculations.add(new Summation());
         calculations.add(new Multiplication());
+        calculations.add(new Power());
 
         // Start the user interface of the application
         startUserInterface();
@@ -25,12 +26,12 @@ public class Main {
         System.out.print("Give value for a: ");
         int a = Integer.parseInt( scanner.nextLine() );
 
-        System.out.print("Give value for b: ");
+        System.out.print("Please give the second value b: ");
         int b = Integer.parseInt( scanner.nextLine() );
 
         // Show all the calculations
         for ( CalculationInterface calc : calculations ) {
-            System.out.println("=> " + a + " " + calc.symbol() + " " + b + " = " + calc.calculate(a, b));
+            System.out.println("Calculation: " + a + " " + calc.symbol() + " " + b + " = " + calc.calculate(a, b));
         }
     }
 }
