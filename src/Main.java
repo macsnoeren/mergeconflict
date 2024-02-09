@@ -12,6 +12,7 @@ public class Main {
 
         // Add all the required calculations to the array
         calculations.add(new Summation());
+        calculations.add(new Multiplication());
 
         // Start the user interface of the application
         startUserInterface();
@@ -21,15 +22,15 @@ public class Main {
     static void startUserInterface() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please give the first value a: ");
+        System.out.print("Give value for a: ");
         int a = Integer.parseInt( scanner.nextLine() );
 
-        System.out.print("Please give the first value b: ");
+        System.out.print("Give value for b: ");
         int b = Integer.parseInt( scanner.nextLine() );
 
         // Show all the calculations
         for ( CalculationInterface calc : calculations ) {
-            System.out.println(a + " " + calc.symbol() + " " + b + " = " + calc.calculate(a, b));
+            System.out.println("=> " + a + " " + calc.symbol() + " " + b + " = " + calc.calculate(a, b));
         }
     }
 }
